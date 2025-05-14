@@ -83,9 +83,9 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										A junior it operations engineer who currently works with Powershell and automates / monitors stuff. 
-										Other than that, I'm also interested in Mobile and Web
+										Other than that, I&apos;m also interested in Mobile and Web
 										Development. I love to learn new
-										things and I'm always open for new opportunities.
+										things and I&apos;m always open for new opportunities.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"

@@ -24,7 +24,6 @@ const getAccessToken = async () => {
 
 export const getNowPlaying = async () => {
 	const { access_token } = await getAccessToken();
-	console.log("access_token", access_token);
 	return fetch(NOW_PLAYING_ENDPOINT, {
 		headers: {
 			Authorization: `Bearer ${access_token}`,
@@ -34,7 +33,6 @@ export const getNowPlaying = async () => {
 
 export default async function getNowPlayingItem() {
 	const response = await getNowPlaying();
-	console.log(response);
 	if (response.status === 204 || response.status > 400) {
 		return false;
 	}

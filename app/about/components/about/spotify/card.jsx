@@ -1,36 +1,29 @@
-// app/about/components/about/spotify/card.jsx
-"use client"; // Dies ist entscheidend! Macht die Komponente zu einer Client Component
+
+"use client";
 
 import React, { useEffect, useState } from "react";
-// KEIN Import von "../../../../api/spotify/fetch" mehr!
-// Wir rufen die API Route direkt per fetch() auf.
 
-import PlayingAnimation from "./animation"; // Bleibt gleich
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Bleibt gleich
-import { faSpotify } from "@fortawesome/free-brands-svg-icons"; // Bleibt gleich
-import Image from "next/image"; // Bleibt gleich
+import PlayingAnimation from "./animation"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 
 const Card = () => {
     const [loading, setLoading] = useState(true);
     const [result, setResult] = useState({});
-    const [error, setError] = useState(null); // Optional: Für bessere Fehleranzeige
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // HIER IST DER WICHTIGE PUNKT: Aufruf DEINER NEUEN API Route!
                 const response = await fetch('/api/spotify/now-playing');
                 const data = await response.json();
-
                 if (response.ok) {
                     setResult(data);
                 } else {
-                    // Fehler von der API Route (z.B. 500 Internal Server Error)
                     setError(data.message || 'Failed to fetch Spotify data from API.');
                     console.error('Error from /api/spotify/now-playing:', data);
                 }
             } catch (err) {
-                // Netzwerkfehler oder Problem beim Aufruf der API Route
                 setError('Network error or problem connecting to Spotify API.');
                 console.error('Fetch error calling /api/spotify/now-playing:', err);
             } finally {
@@ -38,31 +31,12 @@ const Card = () => {
             }
         };
 
-        fetchData(); // Fetch data immediately on component mount
+        fetchData();
 
-        // Fetch data every minute (oder wie oft du möchtest)
         const intervalId = setInterval(fetchData, 60 * 1000);
 
-        return () => clearInterval(intervalId); // Cleanup beim Unmount der Komponente
+        return () => clearInterval(intervalId); 
     }, []);
-
-    if (loading) {
-        return (
-            <div className="mt-3 flex justify-center w-full">
-                <div className="flex justify-center mb-8">
-                    <div className="loader ease-linear rounded-full border-4 border-t-4 border-black h-12 w-12 mb-4"></div>
-                </div>
-            </div>
-        );
-    }
-
-    if (error) {
-        return (
-            <div className="mt-3 flex justify-center w-full">
-                <p className="text-red-500">Error loading Spotify data: {error}</p>
-            </div>
-        );
-    }
 
     return (
         <div className="mt-3 flex justify-center w-full">
@@ -70,7 +44,7 @@ const Card = () => {
                 {result.isPlaying && result.albumImageUrl && (
                     <Image
                         src={result.albumImageUrl}
-                        alt="Background Image" // `alt` Attribut für Barrierefreiheit
+                        alt="Background Image"
                         layout="fill"
                         objectFit="cover"
                         className="z-0 opacity-20 absolute"

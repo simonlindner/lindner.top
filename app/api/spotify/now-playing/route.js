@@ -1,6 +1,6 @@
 
 import querystring from "querystring";
-import { NextResponse } from 'next/server'; 
+import { NextResponse } from 'next/server';
 
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
@@ -10,10 +10,6 @@ const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const getAccessToken = async () => {
-    console.log("DEBUG: Accessing environment variables in /api/spotify/now-playing/route.js");
-    console.log("DEBUG: SPOTIFY_CLIENT_ID (first 5, last 5):", client_id ? client_id.substring(0, 5) + "..." + client_id.substring(client_id.length - 5) : "NOT SET");
-    console.log("DEBUG: SPOTIFY_CLIENT_SECRET (first 5, last 5):", client_secret ? client_secret.substring(0, 5) + "..." + client_secret.substring(client_secret.length - 5) : "NOT SET");
-    console.log("DEBUG: SPOTIFY_REFRESH_TOKEN (first 5, last 5):", refresh_token ? refresh_token.substring(0, 5) + "..." + refresh_token.substring(refresh_token.length - 5) : "NOT SET");
     if (!client_id || !client_secret || !refresh_token) {
         console.error("Environment variables for Spotify client_id, client_secret, or refresh_token are missing!");
         throw new Error("Server configuration error: Missing Spotify secrets.");
@@ -66,7 +62,7 @@ export async function GET() {
 
         const song = await response.json();
 
-        if (!song || !song.item) { 
+        if (!song || !song.item) {
             return NextResponse.json({ isPlaying: false }, { status: 200 });
         }
 

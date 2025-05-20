@@ -56,7 +56,7 @@ module.exports = withBundleAnalyzer({
 	reactStrictMode: true,
 	compiler: {
 		removeConsole: process.env.NODE_ENV === 'production' ? {
-			exclude: ['error', 'warn','log', 'info','debug'],
+			exclude: ['error', 'warn'],
 		} : false,
 	},
 });

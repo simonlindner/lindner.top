@@ -1,6 +1,4 @@
-runConfig:
-  minInstances: 0
-
+env:
 - variable: SPOTIFY_CLIENT_ID
   secret: SPOTIFY_CLIENT_ID
    

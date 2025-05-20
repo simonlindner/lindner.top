@@ -111,7 +111,7 @@ export default function About() {
 						Simon Lindner
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg">
-						Hey there, I&rsquo;m Simon Lindner, a
+						Hey there, I&rsquo;m Simon, a
 						<span className="text-black font-medium">
 							{" "}
 							tech enthusiast

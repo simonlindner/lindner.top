@@ -10,11 +10,6 @@ const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const getAccessToken = async () => {
-        console.log("process: ", process.env)
-        console.log("env: ", process.env)
-        console.log("process.env.SPOTIFY_CLIENT_ID: ", process.env.SPOTIFY_CLIENT_ID)
-        console.log("process.env.SPOTIFY_CLIENT_SECRET: ", process.env.SPOTIFY_CLIENT_SECRET)
-        console.log("process.env.SPOTIFY_REFRESH_TOKEN: ", process.env.SPOTIFY_REFRESH_TOKEN)
     if (!client_id || !client_secret || !refresh_token) {
         console.error("Environment variables for Spotify client_id, client_secret, or refresh_token are missing!");
         throw new Error("Server configuration error: Missing Spotify secrets.");

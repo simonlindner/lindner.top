@@ -35,7 +35,7 @@ export default function About() {
 								className="w-full h-full">
 								<Image
 									src={Me1}
-									alt="Alvalens"
+									alt="Simon"
 									layout="fill"
 									objectFit="cover"
 									placeholder="blur"
@@ -58,7 +58,7 @@ export default function About() {
 								className="w-full h-full">
 								<Image
 									src={Me2}
-									alt="Alvalens"
+									alt="Simon"
 									layout="fill"
 									objectFit="cover"
 									placeholder="blur"
@@ -83,7 +83,7 @@ export default function About() {
 								className="w-full h-full">
 								<Image
 									src={Me3}
-									alt="Alvalens"
+									alt="Simon"
 									layout="fill"
 									objectFit="cover"
 									placeholder="blur"

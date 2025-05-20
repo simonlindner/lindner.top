@@ -38,10 +38,10 @@ export default function Page() {
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ ease: "circOut", duration: 1 }}
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] lg:grayscale lg:hover:grayscale-0 ">
+							className="bg-slate-300 rounded-sm h-[400px] md:h-[400px] w-[65vw] md:w-[30vw] lg:grayscale lg:hover:grayscale-0 ">
 							<Image
 								src={Hero}
-								alt="Alvalen Shafel"
+								alt="Simon Lindner"
 								layout="fill"
 								objectFit="cover"
 								placeholder="blur"

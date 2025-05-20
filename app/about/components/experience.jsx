@@ -63,7 +63,7 @@ export default function Experience() {
 			<Wrapper>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2019</div>
+					<div className="font-medium text-lg">June 2019</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
 							WDR
@@ -143,7 +143,7 @@ export default function Experience() {
 				</div>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">November 2022 - March 2025</div>
+					<div className="font-medium text-lg">April 2025 - Present</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
 							CYBERDYNE IT GmbH

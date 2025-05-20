@@ -11,6 +11,7 @@ import Image from "next/image";
 const Card = () => {
     const [loading, setLoading] = useState(true);
     const [result, setResult] = useState({});
+	
 
     useEffect(() => {
         const fetchData = async () => {

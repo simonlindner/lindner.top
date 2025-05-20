@@ -63,97 +63,109 @@ export default function Experience() {
 			<Wrapper>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2023 - Present</div>
+					<div className="font-medium text-lg">2019</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
-							PT Hafdzamedia Teknologi Aplikasi
+							WDR
 						</h3>
 						<h4 className=" font-light text-md mb-4">
-							Fullstack Web Developer | Part-time
+							Internship
 						</h4>
 						<p className="text-justify">
-							Responsible for building and maintaining scalable
-							web applications using the latest technologies.
-							Collaborated with cross-functional teams to deliver
-							high-quality solutions that meet business
-							requirements.
+							In the course of my student internship, I was able to gain initial insights into the work of 
+							an IT specialist for system integration in a large company.
 						</p>
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								React
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Next.js
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Laravel
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								MySql
+								Systemintegration
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2024 - Present</div>
+					<div className="font-medium text-lg">October 2021 - October 2022</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
-							Outlier
+							CYBERDYNE IT GmbH
 						</h3>
 						<h4 className=" font-light text-md mb-4">
-							AI Trainer | Freelance
+							Dual IT-Study | Systemintegration and Service
 						</h4>
 						<p className="text-justify">
-							Crafted and refined chatbot prompts using prompt
-							engineering and RLHF techniques to improve the AI
-							responses in English and Indonesian, leading to more
-							accurate and contextually relevant interactions.
+							After graduating from high school, I started a dual course of study at the CYBERDYNE IT GmbH in Cologne 
+							while looking for new challenges. In the first year I mainly worked there in the area of system integration 
+							and service.
 						</p>
 
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Generative AI
+								Microsoft Azure
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Prompt Engineering
+								Systemintegration
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Problem Solving
+								Service
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2023 - Present</div>
+					<div className="font-medium text-lg">November 2022 - March 2025</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
-							Self-Employed
+							CYBERDYNE IT GmbH
 						</h3>
 						<h4 className=" font-light text-md mb-4">
-							Web Developer | Freelance
+							Dual IT-Study | Monitoring and Automation
 						</h4>
 						<p className="text-justify">
-							Specialized in crafting innovative solutions using
-							Laravel and Next.js, enhancing client satisfaction
-							and project efficiency. Contributed expertise in
-							both frontend and backend development during
-							collaborative team projects, leading to successful
-							project completions
+							After a year in the company I went to the development department and dealt with 
+							scripts, Powershell and automations.
 						</p>
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								React
+								Powershell
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Next.js
+								Monitoring
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Laravel
+								Automations
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								MySql
+								Rest API
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="grid gap-4 relative">
+					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+					<div className="font-medium text-lg">November 2022 - March 2025</div>
+					<div>
+						<h3 className="font-semibold text-xl text-black">
+							CYBERDYNE IT GmbH
+						</h3>
+						<h4 className=" font-light text-md mb-4">
+							IT Operations Engineer
+						</h4>
+						<p className="text-justify">
+							I finished my IT studies with an average of 1.4 (3.6 GPA) and started working Fulltime as an IT Operations Engineer.
+						</p>
+						<div className="flex flex-wrap gap-2 mt-4 text-sm">
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Powershell
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Monitoring
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Automations
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Endpoint Management
 							</div>
 						</div>
 					</div>

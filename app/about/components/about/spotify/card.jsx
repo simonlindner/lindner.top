@@ -12,7 +12,6 @@ const Card = () => {
     const [result, setResult] = useState({});
 	const [error, setError] = useState(null);
 
-    // Fortschritt und Dauer aus result holen
     const [progress, setProgress] = useState(0);
     const [duration, setDuration] = useState(0);
 
@@ -42,24 +41,13 @@ const Card = () => {
         return () => clearInterval(intervalId); 
     }, []);
 
-    // Fortschritt und Dauer nach jedem API-Call setzen, aber nur zurücksetzen wenn Song gewechselt hat
-    const [lastSongId, setLastSongId] = useState(null);
+    // Fortschritt und Dauer nach jedem API-Call immer auf aktuelle Werte setzen
     useEffect(() => {
         if (result && typeof result.progress_ms === "number" && typeof result.duration_ms === "number") {
-            const songId = result.songUrl || result.title || null;
-            if (songId !== lastSongId) {
-                setProgress(result.progress_ms);
-                setDuration(result.duration_ms);
-                setLastSongId(songId);
-            } else if (progress < result.duration_ms) {
-                // Song ist gleich geblieben, Fortschritt bleibt auf aktuellem Wert
-                setProgress(progress);
-            } else {
-                // Song ist gleich geblieben und Fortschritt >= duration, Fortschritt bleibt auf duration
-                setProgress(result.duration_ms);
-            }
+            setProgress(result.progress_ms);
+            setDuration(result.duration_ms);
         }
-    }, [result.progress_ms, result.duration_ms, result.songUrl, result.title]);
+    }, [result.progress_ms, result.duration_ms]);
 
     // Fortschritt lokal hochzählen und nach Song-Ende neuen Request machen
     useEffect(() => {
@@ -73,11 +61,9 @@ const Card = () => {
             if (!ended && next >= duration) {
                 ended = true;
                 setProgress(duration);
-                // Nach kurzem Delay neuen Request machen
                 setTimeout(() => {
-                    // fetchData ist in useEffect nicht direkt verfügbar, daher Trigger über setResult
                     setResult(prev => ({ ...prev, forceRefresh: Date.now() }));
-                }, 1500); // 1,5 Sekunden nach Song-Ende
+                }, 1500);
                 return;
             }
             if (!ended) setProgress(next);
@@ -86,22 +72,18 @@ const Card = () => {
         return () => clearInterval(interval);
     }, [result.isPlaying, progress, duration]);
 
-    // Wenn progress >= duration, sofort neuen API-Call machen
+    // Immer refreshen, wenn progress >= duration
     useEffect(() => {
         if (progress >= duration && duration > 0) {
-            // fetchData ist in useEffect nicht direkt verfügbar, daher Trigger über setResult
             const timeout = setTimeout(() => {
-                // Löst neuen API-Call aus
                 window.dispatchEvent(new Event("spotify-refresh"));
             }, 1500);
             return () => clearTimeout(timeout);
         }
     }, [progress, duration]);
 
-    // Event-Listener für sofortigen Refresh
     useEffect(() => {
         const handler = () => {
-            // fetchData aus dem ersten useEffect triggern
             (async () => {
                 try {
                     const response = await fetch('/api/spotify/now-playing');
@@ -116,7 +98,6 @@ const Card = () => {
         return () => window.removeEventListener("spotify-refresh", handler);
     }, []);
 
-    // Zeitformatierung
     const formatTime = ms => {
         if (!ms && ms !== 0) return "--:--";
         const totalSeconds = Math.floor(ms / 1000);
@@ -151,14 +132,35 @@ const Card = () => {
                     <div className="z-10 rounded-lg ms-5 w-full">
                         <div className="flex items-center space-x-4">
                             <div className="overflow-hidden">
-                                <a
-                                    href={result.songUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block font-semibold w-full truncate text-blue-500 text-lg"
-                                >
-                                    {result.title}
-                                </a>
+                                {result.title && result.title.length > 29 ? (
+                                    <div className="relative w-full overflow-hidden" style={{maxWidth: '100%'}}>
+                                        <div
+                                            className="block font-semibold text-blue-500 text-lg whitespace-nowrap"
+                                            style={{
+                                                display: 'inline-block',
+                                                animation: 'marquee 16s linear infinite alternate',
+                                                minWidth: '100%',
+                                            }}
+                                        >
+                                            {result.title}
+                                        </div>
+                                        <style>{`
+                                            @keyframes marquee {
+                                                0% { transform: translateX(0%); }
+                                                100% { transform: translateX(-50%); }
+                                            }
+                                        `}</style>
+                                    </div>
+                                ) : (
+                                    <a
+                                        href={result.songUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block font-semibold w-full truncate text-blue-500 text-lg"
+                                    >
+                                        {result.title}
+                                    </a>
+                                )}
                                 <p className="truncate text-gray-500 text-base">
                                     {result.artist}
                                 </p>
@@ -166,7 +168,6 @@ const Card = () => {
                         </div>
                     </div>
                 )}
-                {/* Fortschrittsbalken über die gesamte Card-Breite, ohne Zahlen */}
                 {typeof progress === "number" && typeof duration === "number" && duration > 0 && result.isPlaying && (
                     <div className="absolute left-0 bottom-0 w-full px-0 pb-0 z-20 ">
                         <div className="h-2 w-full bg-gray-200 rounded-full overflow-hidden relative shadow-inner">

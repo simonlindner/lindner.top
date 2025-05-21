@@ -17,11 +17,11 @@ import Hero from "@/public/image/me2.jpg";
 import Hr from "@/components/Hr";
 import About from "./components/about/about.jsx";
 
-export default function Page() {
+export default function MyPage() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-
+		
 	return (
 		<>
 			<main className="overflow-hidden">
@@ -38,10 +38,11 @@ export default function Page() {
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ ease: "circOut", duration: 1 }}
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[400px] w-[65vw] md:w-[30vw] lg:grayscale lg:hover:grayscale-0 ">
+							className="bg-slate-300 rounded-sm h-[420px] md:h-[780px] w-[65vw] md:w-[35vw]">
 							<Image
 								src={Hero}
 								alt="Simon Lindner"
+								className="-translate-y-20 lg:grayscale lg:hover:grayscale-0 transition-all ease duration-300"
 								layout="fill"
 								objectFit="cover"
 								placeholder="blur"

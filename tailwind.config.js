@@ -6,8 +6,6 @@ module.exports = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {
-		},
 	},
 	plugins: [],
 	// Add this to reduce CSS file size in production

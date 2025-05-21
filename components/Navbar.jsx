@@ -1,4 +1,8 @@
 "use client";
+
+
+{/* The Navbar is currently not in use because I think it is cleaner without it.
+import { use } from "react";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -112,7 +116,6 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 				initial={false}>
 				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
 					<div className="flex flex-col items-center space-y-8 my-auto mx-0 z-50">
-						{/* title */}
 						<motion.h1
 							variants={itemVariants}
 							animate={isNavOpen ? "open" : "closed"}
@@ -163,33 +166,57 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 			</motion.div>
 		</>
 	);
-};
+}; */ }
 
 const Navbar = () => {
+	{ /*}
 	const navRef = useRef(null);
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
+	}; */ }
+	const routeToHomepage = () => {
+		location.href = "/#home";
 	};
+
+	{/* useEffect(() => {
+		const handleScroll = () => {
+			if (navRef.current) {
+				if (window.scrollY > 0) {
+					navRef.current.classList.add("bg-gray-700");
+				} else {
+					navRef.current.classList.remove("bg-gray-700");
+				}
+			}
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []); */ }
 
 	return (
 		<>
 			<nav
-				ref={navRef}
+				// ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
+					{/*
 					isNavOpen
 						? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
-						: "backdrop-filter backdrop-blur-md"
-				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
+						: "backdrop-filter backdrop-blur-md" */}
+				}  inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div>
 					<h1
-						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
-							isNavOpen ? "text-white" : ""
-						}`}>
+						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${{/*
+							isNavOpen ? "text-white" : ""*/}
+						}`}
+						onClick={routeToHomepage}
+						style={{ cursor: "pointer" }}
+						>
 						Simon
 					</h1>
-				</div>
+				</div> {/*}
 				<div className="flex flex-row items-center">
 					<button
 						className="burger button flex flex-col justify-center items-center space-y-1.5 "
@@ -203,10 +230,10 @@ const Navbar = () => {
 								isNavOpen ? "-rotate-45 -translate-y-2 bg-white" : ""
 							}`}></div>
 					</button>
-				</div>
+				</div> */}
 			</nav>
-			{/* items */}
-			<NavItems isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+			{/* items 
+			<NavItems isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} /> */}
 		</>
 	);
 };

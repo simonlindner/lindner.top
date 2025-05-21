@@ -63,50 +63,29 @@ export default function Experience() {
 			<Wrapper>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">June 2019</div>
-					<div>
-						<h3 className="font-semibold text-xl text-black">
-							WDR
-						</h3>
-						<h4 className=" font-light text-md mb-4">
-							Internship
-						</h4>
-						<p className="text-justify">
-							In the course of my student internship, I was able to gain initial insights into the work of 
-							an IT specialist for system integration in a large company.
-						</p>
-						<div className="flex flex-wrap gap-2 mt-4 text-sm">
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Systemintegration
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="grid gap-4 relative">
-					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">October 2021 - October 2022</div>
+					<div className="font-medium text-lg">April 2025 - Present</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
 							CYBERDYNE IT GmbH
 						</h3>
 						<h4 className=" font-light text-md mb-4">
-							Dual IT-Study | Systemintegration and Service
+							IT Operations Engineer
 						</h4>
 						<p className="text-justify">
-							After graduating from high school, I started a dual course of study at the CYBERDYNE IT GmbH in Cologne 
-							while looking for new challenges. In the first year I mainly worked there in the area of system integration 
-							and service.
+							I finished my IT studies with an average of 1.4 (3.6 GPA) and started working Fulltime as an IT Operations Engineer.
 						</p>
-
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Microsoft Azure
+								Powershell
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Systemintegration
+								Monitoring
 							</div>
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Service
+								Automations
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Endpoint Management
 							</div>
 						</div>
 					</div>
@@ -143,29 +122,50 @@ export default function Experience() {
 				</div>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">April 2025 - Present</div>
+					<div className="font-medium text-lg">October 2021 - October 2022</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
 							CYBERDYNE IT GmbH
 						</h3>
 						<h4 className=" font-light text-md mb-4">
-							IT Operations Engineer
+							Dual IT-Study | Systemintegration and Service
 						</h4>
 						<p className="text-justify">
-							I finished my IT studies with an average of 1.4 (3.6 GPA) and started working Fulltime as an IT Operations Engineer.
+							After graduating from high school, I started a dual course of study at the CYBERDYNE IT GmbH in Cologne 
+							while looking for new challenges. In the first year I mainly worked there in the area of system integration 
+							and service.
+						</p>
+
+						<div className="flex flex-wrap gap-2 mt-4 text-sm">
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Microsoft Azure
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Systemintegration
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Service
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="grid gap-4 relative">
+					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+					<div className="font-medium text-lg">June 2019</div>
+					<div>
+						<h3 className="font-semibold text-xl text-black">
+							WDR
+						</h3>
+						<h4 className=" font-light text-md mb-4">
+							Internship
+						</h4>
+						<p className="text-justify">
+							In the course of my student internship, I was able to gain initial insights into the work of 
+							an IT specialist for system integration in a large company.
 						</p>
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Powershell
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Monitoring
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Automations
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Endpoint Management
+								Systemintegration
 							</div>
 						</div>
 					</div>

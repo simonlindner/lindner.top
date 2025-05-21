@@ -134,7 +134,7 @@ const MyPage = () => {
 							<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
-										className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] lg:grayscale lg:hover:grayscale-0"
+										className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"
 										initial={{
 											x: 300,
 											opacity: 0,
@@ -146,7 +146,6 @@ const MyPage = () => {
 											z: 0,
 										}}
 										transition={{
-											delay: 0.5,
 											type: "spring",
 											stiffness: 100,
 											damping: 20,
@@ -154,7 +153,7 @@ const MyPage = () => {
 										<Image
 											src={MeAbout}
 											layout="fill"
-											className="object-cover"
+											className="object-cover lg:grayscale lg:hover:grayscale-0 transition-filter ease duration-300"
 											alt="Simon"
 											placeholder="blur"
 										/>
@@ -200,7 +199,7 @@ const MyPage = () => {
 							<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
-										className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] lg:grayscale lg:hover:grayscale-0"
+										className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"
 										initial={{
 											x: 300,
 											opacity: 0,
@@ -220,7 +219,7 @@ const MyPage = () => {
 										<Image
 											src={Setup}
 											layout="fill"
-											className="object-cover"
+											className="object-cover lg:grayscale lg:hover:grayscale-0 transition-filter ease duration-300"
 											alt="Simon Setup"
 											placeholder="blur"
 										/>

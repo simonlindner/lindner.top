@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const PlayingAnimation = () => {
 	return (
-		<div className="relative flex justify-between w-4 h-8 space-x-1">
+		<div className="relative flex flex-row items-center justify-center w-6 h-8 gap-1 mx-4">
 			<motion.span
 				className="w-1 h-full bg-gray-500 rounded-full"
 				animate={{ scaleY: [0.3, 1, 0.5, 0.75, 0.5] }}

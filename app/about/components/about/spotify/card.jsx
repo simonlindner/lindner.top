@@ -134,16 +134,20 @@ const Card = () => {
                             <div className="overflow-hidden">
                                 {result.title && result.title.length > 29 ? (
                                     <div className="relative w-full overflow-hidden" style={{maxWidth: '100%'}}>
-                                        <div
+                                        <a
+                                            href={result.songUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="block font-semibold text-blue-500 text-lg whitespace-nowrap"
                                             style={{
                                                 display: 'inline-block',
                                                 animation: 'marquee 16s linear infinite alternate',
-                                                minWidth: '100%',
+                                                minWidth: '50%',
+                                                marginLeft: 20
                                             }}
                                         >
                                             {result.title}
-                                        </div>
+                                        </a>
                                         <style>{`
                                             @keyframes marquee {
                                                 0% { transform: translateX(0%); }

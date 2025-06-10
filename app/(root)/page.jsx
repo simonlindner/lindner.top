@@ -96,13 +96,14 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link
+											<a href="#about">About Me</a>
+											{/*<Link
 												href={"/docs/Lebenslauf Simon Lindner.pdf"}
 												target="_blank"
 												rel="noopener noreferrer"
 												download>
 												Download CV
-											</Link>
+											</Link> */}
 										</Button>
 										<Button variation="secondary">
 											<a href="#contact">Contact Me</a>

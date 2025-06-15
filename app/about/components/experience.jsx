@@ -160,7 +160,7 @@ export default function Experience() {
 							Internship
 						</h4>
 						<p className="text-justify">
-							In the course of my student internship, I was able to gain initial insights into the work of 
+							In the course of my school internship, I was able to gain initial insights into the work of 
 							an IT specialist for system integration in a large company.
 						</p>
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">

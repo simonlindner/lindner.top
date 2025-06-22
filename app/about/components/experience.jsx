@@ -72,7 +72,7 @@ export default function Experience() {
 							IT Operations Engineer
 						</h4>
 						<p className="text-justify">
-							I finished my IT studies with an average of 1.4 (3.6 GPA) and started working Fulltime as an IT Operations Engineer.
+							I finished my dual IT studies with an average of 1.5 (3.5 GPA) and started working Fulltime as an IT Operations Engineer.
 						</p>
 						<div className="flex flex-wrap gap-2 mt-4 text-sm">
 							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">

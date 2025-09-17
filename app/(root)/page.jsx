@@ -17,7 +17,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCloudRain, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const MyPage = () => {
 	const fullpageOptions = {
@@ -331,6 +331,32 @@ const MyPage = () => {
 												opacity: { delay: 0.6 },
 											}}>
 											<FontAwesomeIcon icon={faDiscord} className="text-3xl" />
+										</motion.a>
+										<motion.a
+											href="https://upstreamrain.de"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300 "
+											initial={{ opacity: 0, y: 40 }}
+											whileInView={{ opacity: 1, y: 0 }}
+											transition={{
+												y: { delay: 0.5 },
+												opacity: { delay: 0.6 },
+											}}>
+											<FontAwesomeIcon icon={faCloudRain} className="text-3xl" style={{ transform: "rotate(180deg)" }}/>
+										</motion.a>
+										<motion.a
+											href="https://legacy.lindner.top/ForPeopleThatSpeakEnglish"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex justify-center items-center bg-gray-700 w-24 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											initial={{ opacity: 0, y: 40 }}
+											whileInView={{ opacity: 1, y: 0 }}
+											transition={{
+												y: { delay: 0.5 },
+												opacity: { delay: 0.6 },
+											}}>
+											Legacy
 										</motion.a>
 									</div>
 								</div>

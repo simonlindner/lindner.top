@@ -116,21 +116,24 @@ export default function About() {
 							{" "}
 							tech enthusiast
 						</span>{" "}
-						and
+						and currently
 						<span className="text-black font-medium">
 							{" "}
-							IT Operations Engineer.
-						</span>{" "}
+							Java Software Developer
+						</span>.{" "}
 						Originating from Cologne, Germany,
 						I&rsquo;m currently embarking on a fascinating journey
 						at{" "}
 						<span className="text-black font-medium">
-							CYBERDYNE,
+							GVV,
 						</span>{" "}
-						where I also did my dual studies until 2025 for my degree in{" "}
+						where I went after finishing my dual studies in 2025 for my degree in{" "}
 						<span className="text-black font-medium">
-							Computer Science.
-						</span>{" "}
+							Computer Science 
+						</span>
+						{" "}
+						to get a better understanding of the world of technology and software development.
+						{" "}
 						My passion for technology and coding knows no bounds.
 						Beyond the world of coding, I find myself deeply
 						immersed in the realms of Mobile Development, Game Development, and

@@ -72,7 +72,7 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										IT Operations Engineer
+										Java Software Developer
 									</motion.h1>
 									<motion.p
 										className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -82,7 +82,7 @@ const MyPage = () => {
 											delay: 0.4,
 											type: "spring",
 										}}>
-										A junior it operations engineer who currently works with Powershell and automates / monitors stuff. 
+										A java software developer who currently works with Spring Boot and REST APIs. 
 										Other than that, I&apos;m also interested in Mobile and Web
 										Development. I love to learn new
 										things and I&apos;m always open for new opportunities.

@@ -21,12 +21,12 @@ export default function Tools() {
 				Tools
 			</h2>
 			<p className="text-gray-500 text-center tracking-wider md:px-">
-				<span className="text-black font-bold">Visual Studio Code</span> |{" "}
-				<span className="text-black font-bold">Kaseya Applications</span> |{" "}
+				<span className="text-black font-bold">Azure Devops</span> |{" "}
+				<span className="text-black font-medium">Visual Studio Code</span> |{" "}
 				<span className="text-black font-medium">Git</span> |{" "}
+				<span className="text-black font-medium">Kaseya Applications</span> |{" "}
 				<span className="text-black font-medium">Github</span> |{" "}
 				<span className="text-black font-medium">Postman</span> |{" "}
-				<span className="text-black font-bold">Azure Devops</span> |{" "}
 				<span className="text-black font-medium">VMWare</span>
 			</p>
 		</motion.div>

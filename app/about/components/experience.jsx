@@ -63,7 +63,36 @@ export default function Experience() {
 			<Wrapper>
 				<div className="grid gap-4 relative">
 					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">April 2025 - Present</div>
+					<div className="font-medium text-lg">September 2026 - Present</div>
+					<div>
+						<h3 className="font-semibold text-xl text-black">
+							GVV Kommunalversicherung
+						</h3>
+						<h4 className=" font-light text-md mb-4">
+							Java Software Developer
+						</h4>
+						<p className="text-justify">
+							After seeing almost everything in the IT Operations field, I wanted to focus on my passion for programming and started working as a Java Software Developer.
+						</p>
+						<div className="flex flex-wrap gap-2 mt-4 text-sm">
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Java
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Spring Boot
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								REST API
+							</div>
+							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Pipelines
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="grid gap-4 relative">
+					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+					<div className="font-medium text-lg">April 2025 - August 2026</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
 							CYBERDYNE IT GmbH

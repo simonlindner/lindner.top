@@ -17,30 +17,30 @@
     "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.3.0",
-    "@fortawesome/free-brands-svg-icons": "^7.3.0",
-    "@fortawesome/free-regular-svg-icons": "^7.3.0",
-    "@fortawesome/free-solid-svg-icons": "^7.3.0",
-    "@fortawesome/react-fontawesome": "^3.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^3.1.1",
     "@fullpage/react-fullpage": "^0.1.48",
     "@tailwindcss/postcss": "^4.0.14",
-    "@vercel/analytics": "^2.0.1",
-    "eslint": "10.5.0",
-    "eslint-config-next": "16.2.10",
+    "@vercel/analytics": "^1.5.0",
+    "eslint": "9.22.0",
+    "eslint-config-next": "15.2.3",
     "framer-motion": "^12.5.0",
-    "next": "^16.2.10",
+    "next": "^15.2.6",
     "nprogress": "^0.2.0",
     "postcss": "^8.5.3",
     "prop-types": "^15.8.1",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "sharp": "^0.35.3",
-    "sitemap": "^9.0.1",
+    "sharp": "^0.33.5",
+    "sitemap": "^8.0.0",
     "swr": "^2.3.3",
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "16.2.10",
-    "cross-env": "^10.1.0"
+    "@next/bundle-analyzer": "15.2.3",
+    "cross-env": "^7.0.3"
   }
 }

@@ -4,19 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@typescript-eslint/eslint-plugin': 8.63.0
-  '@typescript-eslint/parser': 8.63.0
-  '@typescript-eslint/project-service': 8.63.0
-  '@typescript-eslint/scope-manager': 8.63.0
-  '@typescript-eslint/tsconfig-utils': 8.63.0
-  '@typescript-eslint/type-utils': 8.63.0
-  '@typescript-eslint/types': 8.63.0
-  '@typescript-eslint/typescript-estree': 8.63.0
-  '@typescript-eslint/utils': 8.63.0
-  '@typescript-eslint/visitor-keys': 8.63.0
-  typescript-eslint: 8.63.0
-
 importers:
 
   .:
@@ -705,7 +692,7 @@ packages:
     resolution: {integrity: sha512-rvwSgqT+DHpWdzfSzPatRLm02a0GlESt++9iy3hLCDY4BgkaLcl8LBi9Yh7XGFBpwcBE/K3024QuXWTpbz4FfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      '@typescript-eslint/parser': 8.63.0
+      '@typescript-eslint/parser': ^8.63.0
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 

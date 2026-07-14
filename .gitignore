@@ -62,3 +62,4 @@ next-env.d.ts
 !jsconfig.json
 !apphosting.yaml
 !.eslintrc.json
+!pnpm-workspace.yaml

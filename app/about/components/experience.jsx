@@ -66,7 +66,7 @@ export default function Experience() {
 					<div className="font-medium text-lg">September 2026 - Present</div>
 					<div>
 						<h3 className="font-semibold text-xl text-black">
-							GVV Kommunalversicherung
+							GVV Kommunalversicherungen
 						</h3>
 						<h4 className=" font-light text-md mb-4">
 							Java Software Developer

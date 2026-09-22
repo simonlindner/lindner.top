@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Me1 from "@/public/image/me1.jpg";
 import Me2 from "@/public/image/me2.jpg";
 import Me3 from "@/public/image/me3.jpg";
+import Me4 from "@/public/image/me4.jpg";
 import Hr from "@/components/Hr";
 
 function Title() {
@@ -34,7 +35,7 @@ export default function About() {
 								}}
 								className="w-full h-full">
 								<Image
-									src={Me1}
+									src={Me4}
 									alt="Simon"
 									layout="fill"
 									objectFit="cover"
@@ -57,7 +58,7 @@ export default function About() {
 								transition={{ delay: 0.3 }}
 								className="w-full h-full">
 								<Image
-									src={Me2}
+									src={Me3}
 									alt="Simon"
 									layout="fill"
 									objectFit="cover"
@@ -82,7 +83,7 @@ export default function About() {
 								}}
 								className="w-full h-full">
 								<Image
-									src={Me3}
+									src={Me1}
 									alt="Simon"
 									layout="fill"
 									objectFit="cover"
@@ -127,12 +128,13 @@ export default function About() {
 						<span className="text-black font-medium">
 							GVV,
 						</span>{" "}
-						where I went after finishing my dual studies in 2025 for my degree in{" "}
+						where I went after working as an 
+						{" "}
 						<span className="text-black font-medium">
-							Computer Science 
+							IT Operations Engineer
 						</span>
 						{" "}
-						to get a better understanding of the world of technology and software development.
+						for a year to get a better understanding of the world of technology and software development.
 						{" "}
 						My passion for technology and coding knows no bounds.
 						Beyond the world of coding, I find myself deeply
